@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,13 +104,13 @@ Inheritance diagram for StopCondition:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af9d99b3d381a496ec80a7b7775d01c71"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStopCondition.html#af9d99b3d381a496ec80a7b7775d01c71">check</a> (int iterC, double error)=0</td></tr>
-<tr class="separator:af9d99b3d381a496ec80a7b7775d01c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5183cff2ff7632e9877c1f61200b9ac2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStopCondition.html#a5183cff2ff7632e9877c1f61200b9ac2">check</a> (int iteration, double error)=0</td></tr>
+<tr class="separator:a5183cff2ff7632e9877c1f61200b9ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for classes describing conditions for whether to continue training Neural Nets </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af9d99b3d381a496ec80a7b7775d01c71"></a>
+<a class="anchor" id="a5183cff2ff7632e9877c1f61200b9ac2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual bool StopCondition::check </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iterC</em>, </td>
+          <td class="paramname"><em>iteration</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <p>Control if the condition has been met</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iterC</td><td>amount of training iterations ran </td></tr>
+    <tr><td class="paramname">iteration</td><td>amount of training iterations ran </td></tr>
     <tr><td class="paramname">error</td><td>current error from evaluation</td></tr>
   </table>
   </dd>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['randomweightgenerator',['RandomWeightGenerator',['../classRandomWeightGenerator.html',1,'RandomWeightGenerator'],['../classRandomWeightGenerator.html#ac40d5290ab231a39a143ead873c39590',1,'RandomWeightGenerator::RandomWeightGenerator()']]],
-  ['run',['run',['../classNetTraining.html#adfb791373a989b8dff0cf885e20bedbb',1,'NetTraining']]]
+  ['outputneuron',['OutputNeuron',['../classOutputNeuron.html',1,'OutputNeuron'],['../classOutputNeuron.html#a11e18fc27875c0826976e0087cc7c51a',1,'OutputNeuron::OutputNeuron(std::function&lt; double(double)&gt; activationFunc)'],['../classOutputNeuron.html#a48c7a4835bf72b0f8084883ac985646c',1,'OutputNeuron::OutputNeuron(std::function&lt; double(double)&gt; activationFunc, std::vector&lt; Edge * &gt; inputs)'],['../classOutputNeuron.html#a7bbd1b078a0557be9dbd6aad6463c1c1',1,'OutputNeuron::OutputNeuron(std::function&lt; double(double)&gt; activationFunc, double targetValue)']]]
 ];

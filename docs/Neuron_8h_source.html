@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,36 +109,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::function&lt;double(double)&gt; activationFunc;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">double</span> delta = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#a2b44d861b47103387bf3c5863ddd0482">sigmoidDelta</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classNeuron.html#a615da38e9540c546166bb49b9b23cb42">Neuron</a>(std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>)&gt; activationFunc,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                std::vector&lt;Edge*&gt; inputs,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                std::vector&lt;Edge*&gt; outputs);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classNeuron.html#a615da38e9540c546166bb49b9b23cb42">Neuron</a>(std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>)&gt; activationFunc);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#ac396d23511a3a33b1836cd44271427ec">setInputs</a>(std::vector&lt;Edge*&gt; inputs);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#ab62d0d1a5caaf1ce6e1bf4f661da0195">setOutputs</a>(std::vector&lt;Edge*&gt; outputs);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#a97026c910ebd5bf06bdf1d109b7dd470">calcOutput</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#af12526ab684ddf6a04066d44ef293b99">calcDelta</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#aede55ffaebb746a3d1f285d139c199b3">getOutput</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#aea31f005c8977ed1f2d295a0fbcbd869">getDelta</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // NEURON_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classNeuron.html#aa2823ed0557b8296ed5987601bad30ed">   28</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#aa2823ed0557b8296ed5987601bad30ed">delta</a> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#a2b44d861b47103387bf3c5863ddd0482">sigmoidDelta</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classNeuron.html#a615da38e9540c546166bb49b9b23cb42">Neuron</a>(std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>)&gt; activationFunc,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                std::vector&lt;Edge*&gt; inputs,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                std::vector&lt;Edge*&gt; outputs);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classNeuron.html#a615da38e9540c546166bb49b9b23cb42">Neuron</a>(std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>)&gt; activationFunc);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#ac396d23511a3a33b1836cd44271427ec">setInputs</a>(std::vector&lt;Edge*&gt; inputs);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#ab62d0d1a5caaf1ce6e1bf4f661da0195">setOutputs</a>(std::vector&lt;Edge*&gt; outputs);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#a97026c910ebd5bf06bdf1d109b7dd470">calcOutput</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNeuron.html#af12526ab684ddf6a04066d44ef293b99">calcDelta</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#aede55ffaebb746a3d1f285d139c199b3">getOutput</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classNeuron.html#aea31f005c8977ed1f2d295a0fbcbd869">getDelta</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // NEURON_H</span></div>
 <div class="ttc" id="classNeuron_html"><div class="ttname"><a href="classNeuron.html">Neuron</a></div><div class="ttdef"><b>Definition:</b> Neuron.h:15</div></div>
 <div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:7</div></div>
 <div class="ttc" id="classEdge_html"><div class="ttname"><a href="classEdge.html">Edge</a></div><div class="ttdef"><b>Definition:</b> Edge.h:19</div></div>
 <div class="ttc" id="classNeuron_html_af12526ab684ddf6a04066d44ef293b99"><div class="ttname"><a href="classNeuron.html#af12526ab684ddf6a04066d44ef293b99">Neuron::calcDelta</a></div><div class="ttdeci">void calcDelta()</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:36</div></div>
 <div class="ttc" id="classNeuron_html_a615da38e9540c546166bb49b9b23cb42"><div class="ttname"><a href="classNeuron.html#a615da38e9540c546166bb49b9b23cb42">Neuron::Neuron</a></div><div class="ttdeci">Neuron(std::function&lt; double(double)&gt; activationFunc, std::vector&lt; Edge * &gt; inputs, std::vector&lt; Edge * &gt; outputs)</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:3</div></div>
+<div class="ttc" id="classNeuron_html_aa2823ed0557b8296ed5987601bad30ed"><div class="ttname"><a href="classNeuron.html#aa2823ed0557b8296ed5987601bad30ed">Neuron::delta</a></div><div class="ttdeci">double delta</div><div class="ttdef"><b>Definition:</b> Neuron.h:28</div></div>
 <div class="ttc" id="classNeuron_html_a2b44d861b47103387bf3c5863ddd0482"><div class="ttname"><a href="classNeuron.html#a2b44d861b47103387bf3c5863ddd0482">Neuron::sigmoidDelta</a></div><div class="ttdeci">double sigmoidDelta()</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:11</div></div>
 <div class="ttc" id="classNeuron_html_a97026c910ebd5bf06bdf1d109b7dd470"><div class="ttname"><a href="classNeuron.html#a97026c910ebd5bf06bdf1d109b7dd470">Neuron::calcOutput</a></div><div class="ttdeci">void calcOutput()</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:25</div></div>
 <div class="ttc" id="classNeuron_html_ac396d23511a3a33b1836cd44271427ec"><div class="ttname"><a href="classNeuron.html#ac396d23511a3a33b1836cd44271427ec">Neuron::setInputs</a></div><div class="ttdeci">void setInputs(std::vector&lt; Edge * &gt; inputs)</div><div class="ttdef"><b>Definition:</b> Neuron.cpp:17</div></div>

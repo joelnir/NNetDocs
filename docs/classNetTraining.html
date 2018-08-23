@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,15 +95,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7f118c4125d53fc248ca59b641ebc4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetTraining.html#ae7f118c4125d53fc248ca59b641ebc4a">NetTraining</a> (<a class="el" href="classConnectedNet.html">ConnectedNet</a> *net, std::vector&lt; <a class="el" href="classTrainingData.html">TrainingData</a> &gt; trainingData, std::vector&lt; <a class="el" href="classTrainingData.html">TrainingData</a> &gt; evalData, <a class="el" href="classStopCondition.html">StopCondition</a> *stopper, double learnigRate, int trainingPerIteration=1)</td></tr>
-<tr class="separator:ae7f118c4125d53fc248ca59b641ebc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d85627bd77f5e5c6d7f1507e754e2b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetTraining.html#a6d85627bd77f5e5c6d7f1507e754e2b4">NetTraining</a> (<a class="el" href="classConnectedNet.html">ConnectedNet</a> *net, std::vector&lt; <a class="el" href="classTrainingData.html">TrainingData</a> &gt; trainingData, std::vector&lt; <a class="el" href="classTrainingData.html">TrainingData</a> &gt; evalData, <a class="el" href="classStopCondition.html">StopCondition</a> *stopper, double learningRate, int trainingPerIteration=1)</td></tr>
+<tr class="separator:a6d85627bd77f5e5c6d7f1507e754e2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb791373a989b8dff0cf885e20bedbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetTraining.html#adfb791373a989b8dff0cf885e20bedbb">run</a> ()</td></tr>
 <tr class="separator:adfb791373a989b8dff0cf885e20bedbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Training session of a neural net. Consists of a collection of data, net and some stop condition for how long to keep training. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae7f118c4125d53fc248ca59b641ebc4a"></a>
+<a class="anchor" id="a6d85627bd77f5e5c6d7f1507e754e2b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>learnigRate</em>, </td>
+          <td class="paramname"><em>learningRate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

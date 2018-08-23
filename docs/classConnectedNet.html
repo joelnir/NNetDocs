@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,8 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc14428408f007e319a203af4cfd6bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c0ebac35815f387a181e51bb972f45"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConnectedNet.html#a76c0ebac35815f387a181e51bb972f45">getOutput</a> (std::vector&lt; double &gt; inputValues)</td></tr>
 <tr class="separator:a76c0ebac35815f387a181e51bb972f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2f394881257d68e21c3276e760b333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConnectedNet.html#a3c2f394881257d68e21c3276e760b333">train</a> (<a class="el" href="classTrainingData.html">TrainingData</a> &amp;tData, double learningrate)</td></tr>
-<tr class="separator:a3c2f394881257d68e21c3276e760b333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc345ff4aaefddc9cf8bfeebb0d9516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConnectedNet.html#a2fc345ff4aaefddc9cf8bfeebb0d9516">train</a> (<a class="el" href="classTrainingData.html">TrainingData</a> &amp;tData, double learningRate)</td></tr>
+<tr class="separator:a2fc345ff4aaefddc9cf8bfeebb0d9516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07f38aaf5ed64839b30b55fa76bd028"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConnectedNet.html#aa07f38aaf5ed64839b30b55fa76bd028">getDifference</a> ()</td></tr>
 <tr class="separator:aa07f38aaf5ed64839b30b55fa76bd028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -155,7 +155,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">inputNodes</td><td>amount of inputs to the network </td></tr>
     <tr><td class="paramname">hiddenLayers</td><td>vector of dimensions of hidden layers, number at each index becomes amount of neurons in hidden layer at that index </td></tr>
     <tr><td class="paramname">outputNodes</td><td>amount of outputs from the network </td></tr>
-    <tr><td class="paramname">weighGen</td><td>generator to use for initializing weights in the network, if left a nullptr it is replaced with a default random generator </td></tr>
+    <tr><td class="paramname">weightGen</td><td>generator to use for initializing weights in the network, if left a nullptr it is replaced with a default random generator </td></tr>
   </table>
   </dd>
 </dl>
@@ -220,7 +220,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3c2f394881257d68e21c3276e760b333"></a>
+<a class="anchor" id="a2fc345ff4aaefddc9cf8bfeebb0d9516"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -234,7 +234,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>learningrate</em>&#160;</td>
+          <td class="paramname"><em>learningRate</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

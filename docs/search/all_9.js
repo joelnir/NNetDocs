@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unitstep',['unitStep',['../namespaceNNetUtil.html#a8743038c5b4f65a26729f0dd5a128648',1,'NNetUtil']]],
-  ['updateweight',['updateWeight',['../classEdge.html#a6cde015072e4e193292e2d19cd05b979',1,'Edge']]]
+  ['train',['train',['../classConnectedNet.html#a2fc345ff4aaefddc9cf8bfeebb0d9516',1,'ConnectedNet']]],
+  ['trainingdata',['TrainingData',['../classTrainingData.html',1,'TrainingData'],['../classTrainingData.html#a9971f8d191434b1cf1cbddcc3d1200d8',1,'TrainingData::TrainingData()']]]
 ];

@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::vector&lt;double&gt; <a class="code" href="classConnectedNet.html#a76c0ebac35815f387a181e51bb972f45">getOutput</a>(std::vector&lt;double&gt; inputValues);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classConnectedNet.html#a3c2f394881257d68e21c3276e760b333">train</a>(<a class="code" href="classTrainingData.html">TrainingData</a>&amp; tData, <span class="keywordtype">double</span> learningrate);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classConnectedNet.html#a2fc345ff4aaefddc9cf8bfeebb0d9516">train</a>(<a class="code" href="classTrainingData.html">TrainingData</a>&amp; tData, <span class="keywordtype">double</span> learningRate);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::vector&lt;double&gt; <a class="code" href="classConnectedNet.html#aa07f38aaf5ed64839b30b55fa76bd028">getDifference</a>();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
@@ -126,10 +126,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classInputNode_html"><div class="ttname"><a href="classInputNode.html">InputNode</a></div><div class="ttdef"><b>Definition:</b> InputNode.h:9</div></div>
 <div class="ttc" id="classTrainingData_html"><div class="ttname"><a href="classTrainingData.html">TrainingData</a></div><div class="ttdef"><b>Definition:</b> TrainingData.h:10</div></div>
 <div class="ttc" id="classConnectedNet_html_a741043d6a393e5f0c1e35d7e6e47588f"><div class="ttname"><a href="classConnectedNet.html#a741043d6a393e5f0c1e35d7e6e47588f">ConnectedNet::ConnectedNet</a></div><div class="ttdeci">ConnectedNet(int inputNodes, std::vector&lt; int &gt; hiddenLayers, int outputNodes, WeightGenerator *weightGen=nullptr)</div><div class="ttdef"><b>Definition:</b> ConnectedNet.cpp:5</div></div>
+<div class="ttc" id="classConnectedNet_html_a2fc345ff4aaefddc9cf8bfeebb0d9516"><div class="ttname"><a href="classConnectedNet.html#a2fc345ff4aaefddc9cf8bfeebb0d9516">ConnectedNet::train</a></div><div class="ttdeci">void train(TrainingData &amp;tData, double learningRate)</div><div class="ttdef"><b>Definition:</b> ConnectedNet.cpp:243</div></div>
 <div class="ttc" id="classConnectedNet_html_abc14428408f007e319a203af4cfd6bd3"><div class="ttname"><a href="classConnectedNet.html#abc14428408f007e319a203af4cfd6bd3">ConnectedNet::~ConnectedNet</a></div><div class="ttdeci">~ConnectedNet()</div><div class="ttdef"><b>Definition:</b> ConnectedNet.cpp:189</div></div>
 <div class="ttc" id="classWeightGenerator_html"><div class="ttname"><a href="classWeightGenerator.html">WeightGenerator</a></div><div class="ttdef"><b>Definition:</b> WeightGenerator.h:7</div></div>
 <div class="ttc" id="classConnectedNet_html_a76c0ebac35815f387a181e51bb972f45"><div class="ttname"><a href="classConnectedNet.html#a76c0ebac35815f387a181e51bb972f45">ConnectedNet::getOutput</a></div><div class="ttdeci">std::vector&lt; double &gt; getOutput(std::vector&lt; double &gt; inputValues)</div><div class="ttdef"><b>Definition:</b> ConnectedNet.cpp:216</div></div>
-<div class="ttc" id="classConnectedNet_html_a3c2f394881257d68e21c3276e760b333"><div class="ttname"><a href="classConnectedNet.html#a3c2f394881257d68e21c3276e760b333">ConnectedNet::train</a></div><div class="ttdeci">void train(TrainingData &amp;tData, double learningrate)</div><div class="ttdef"><b>Definition:</b> ConnectedNet.cpp:243</div></div>
 <div class="ttc" id="classConnectedNet_html"><div class="ttname"><a href="classConnectedNet.html">ConnectedNet</a></div><div class="ttdef"><b>Definition:</b> ConnectedNet.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

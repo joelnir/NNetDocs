@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,17 +114,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keyword">const</span> std::vector&lt;double&gt;&amp; output);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classNetTraining.html#ae7f118c4125d53fc248ca59b641ebc4a">NetTraining</a>(<a class="code" href="classConnectedNet.html">ConnectedNet</a>* net, std::vector&lt;TrainingData&gt; trainingData,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classNetTraining.html#a6d85627bd77f5e5c6d7f1507e754e2b4">NetTraining</a>(<a class="code" href="classConnectedNet.html">ConnectedNet</a>* net, std::vector&lt;TrainingData&gt; trainingData,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                std::vector&lt;TrainingData&gt; evalData, <a class="code" href="classStopCondition.html">StopCondition</a>* stopper,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">double</span> learnigRate, <span class="keywordtype">int</span> trainingPerIteration = 1);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">double</span> learningRate, <span class="keywordtype">int</span> trainingPerIteration = 1);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classNetTraining.html#adfb791373a989b8dff0cf885e20bedbb">run</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // NET_TRAINING_H</span></div>
-<div class="ttc" id="classNetTraining_html_ae7f118c4125d53fc248ca59b641ebc4a"><div class="ttname"><a href="classNetTraining.html#ae7f118c4125d53fc248ca59b641ebc4a">NetTraining::NetTraining</a></div><div class="ttdeci">NetTraining(ConnectedNet *net, std::vector&lt; TrainingData &gt; trainingData, std::vector&lt; TrainingData &gt; evalData, StopCondition *stopper, double learnigRate, int trainingPerIteration=1)</div><div class="ttdef"><b>Definition:</b> NetTraining.cpp:6</div></div>
 <div class="ttc" id="classNetTraining_html"><div class="ttname"><a href="classNetTraining.html">NetTraining</a></div><div class="ttdef"><b>Definition:</b> NetTraining.h:13</div></div>
 <div class="ttc" id="classConnectedNet_html"><div class="ttname"><a href="classConnectedNet.html">ConnectedNet</a></div><div class="ttdef"><b>Definition:</b> ConnectedNet.h:15</div></div>
+<div class="ttc" id="classNetTraining_html_a6d85627bd77f5e5c6d7f1507e754e2b4"><div class="ttname"><a href="classNetTraining.html#a6d85627bd77f5e5c6d7f1507e754e2b4">NetTraining::NetTraining</a></div><div class="ttdeci">NetTraining(ConnectedNet *net, std::vector&lt; TrainingData &gt; trainingData, std::vector&lt; TrainingData &gt; evalData, StopCondition *stopper, double learningRate, int trainingPerIteration=1)</div><div class="ttdef"><b>Definition:</b> NetTraining.cpp:6</div></div>
 <div class="ttc" id="classStopCondition_html"><div class="ttname"><a href="classStopCondition.html">StopCondition</a></div><div class="ttdef"><b>Definition:</b> StopCondition.h:10</div></div>
 <div class="ttc" id="classNetTraining_html_adfb791373a989b8dff0cf885e20bedbb"><div class="ttname"><a href="classNetTraining.html#adfb791373a989b8dff0cf885e20bedbb">NetTraining::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> NetTraining.cpp:45</div></div>
 </div><!-- fragment --></div><!-- contents -->

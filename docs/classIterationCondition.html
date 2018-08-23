@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <p>Create a new <a class="el" href="classIterationCondition.html">IterationCondition</a> that will allow given amount of iterations</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">allowedIteration</td><td>amount of iterations to allow </td></tr>
+    <tr><td class="paramname">allowedIterations</td><td>amount of iterations to allow </td></tr>
   </table>
   </dd>
 </dl>
@@ -174,14 +174,14 @@ Inherits:<br/>
 Control if the condition has been met</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iterC</td><td>amount of training iterations ran </td></tr>
+    <tr><td class="paramname">iteration</td><td>amount of training iterations ran </td></tr>
     <tr><td class="paramname">error</td><td>current error from evaluation</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if training is done </dd></dl>
 
-<p>Implements <a class="el" href="classStopCondition.html#af9d99b3d381a496ec80a7b7775d01c71">StopCondition</a>.</p>
+<p>Implements <a class="el" href="classStopCondition.html#a5183cff2ff7632e9877c1f61200b9ac2">StopCondition</a>.</p>
 
 </div>
 </div>
