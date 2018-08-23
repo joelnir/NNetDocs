@@ -1,2 +1,0 @@
-# NNetDocs
-Documentation for NNetCpp
